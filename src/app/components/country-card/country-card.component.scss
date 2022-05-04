@@ -1,0 +1,69 @@
+.country {
+  border: 0.1em solid #154360;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 0.5em;
+  margin-bottom: 1em;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+
+  &__details {
+    padding-bottom: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #154360;
+
+    &__content {
+      display: flex;
+      flex-flow: row wrap;
+
+      &__holiday {
+        width: 30%;
+        margin: 0.25em;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: #aed6f1;
+      }
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__flag {
+    margin-right: 0.5em;
+    margin-left: 0.25em;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+img {
+  width: 3em;
+  height: 100%;
+  // border: 0.1em solid black;
+  // border-radius: 0.5em;
+}
+
+.spacer {
+  flex-grow: 1;
+  height: 1em;
+}
+
+.holiday-name {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.holiday-date {
+  font-size: smaller;
+}
+
+.holiday-description {
+  font-size: medium;
+}

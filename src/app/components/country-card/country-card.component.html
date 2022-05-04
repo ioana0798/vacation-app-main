@@ -1,0 +1,22 @@
+<div class="country">
+  <div class="country__details">
+    <div class="country__details__name">
+      <div class="country__flag">
+        <img alt="flag" src="{{ countryFlagUrl }}" />
+      </div>
+      <h2>{{ country.name }}</h2>
+    </div>
+    <div class="country__details__content">
+      <div
+        class="country__details__content__holiday"
+        *ngFor="let holiday of country.holidays"
+      >
+        <div class="holiday-name">{{ holiday.name }}</div>
+        <div class="holiday-date">{{ holiday.date }}</div>
+        <div class="spacer"></div>
+        <div class="holiday-description">{{ holiday.description }}</div>
+        <div class="spacer"></div>
+      </div>
+    </div>
+  </div>
+</div>

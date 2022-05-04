@@ -1,0 +1,21 @@
+<div class="content">
+  <div class="panel">
+    <div class="panel__icon">
+      <mat-icon [inline]="true">houseboat</mat-icon>
+    </div>
+
+    <span class="panel__title">Welcome to Holiday Finder!</span>
+    <span class="panel__description">
+      Find information about the holidays from more than 230 countries by simply
+      entering a year and any additional search criteria, such as the name of a
+      specific country or holiday.
+    </span>
+    <button
+      mat-flat-button
+      class="panel__button"
+      (click)="this.router.navigate(['/search'])"
+    >
+      Go to search
+    </button>
+  </div>
+</div>

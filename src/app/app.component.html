@@ -1,0 +1,21 @@
+<mat-toolbar>
+  <span>Holiday Finder</span>
+  <span class="example-spacer"></span>
+  <div class="button">
+    <button
+      mat-icon-button
+      class="button__search"
+      (click)="this.router.navigate(['/search'])"
+    >
+      <mat-icon class="button__search__icon">search</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      class="button__home"
+      (click)="this.router.navigate(['/'])"
+    >
+      <mat-icon class="button__home__icon">home</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

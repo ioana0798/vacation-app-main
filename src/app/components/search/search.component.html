@@ -1,0 +1,17 @@
+<div class="search">
+  <input
+    class="search__year"
+    type="number"
+    placeholder="Year"
+    [value]="this.year"
+    (change)="sendSearchYear($event)"
+  />
+
+  <input
+    class="search__term"
+    type="search"
+    placeholder="Search by country or holiday"
+    [value]="this.word"
+    (change)="sendSearchTerm($event)"
+  />
+</div>

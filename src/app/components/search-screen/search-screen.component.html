@@ -1,0 +1,7 @@
+<div class="content">
+  <div class="content__icon" *ngIf="!this.hasList">
+    <mat-icon [inline]="true">houseboat</mat-icon>
+  </div>
+  <app-search [ngClass]="{ content__search: !this.hasList }"></app-search>
+  <app-country-list class="content__country__list"></app-country-list>
+</div>

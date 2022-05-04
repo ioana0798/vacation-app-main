@@ -1,0 +1,5 @@
+<div class="country" *ngIf="this.searchYear != 0">
+  <div class="country-item" *ngFor="let country of filteredCountries">
+    <app-country-card [country]="country"></app-country-card>
+  </div>
+</div>

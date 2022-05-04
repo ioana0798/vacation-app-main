@@ -1,0 +1,34 @@
+mat-toolbar {
+  height: 4em;
+  width: 100% !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1f618d;
+  font-weight: bolder;
+  color: #fbfcfc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.button {
+  &__search {
+    background-color: #1f618d;
+
+    &__icon {
+      color: #fbfcfc;
+    }
+  }
+
+  &__home {
+    background-color: #1f618d;
+
+    &__icon {
+      color: #fbfcfc;
+    }
+  }
+}

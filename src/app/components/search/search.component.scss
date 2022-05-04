@@ -1,0 +1,13 @@
+.search {
+  margin-bottom: 2em;
+  &__year {
+    width: 4em;
+    height: 2em;
+    margin-right: 0.5em;
+  }
+
+  &__term {
+    width: 50em;
+    height: 2.5em;
+  }
+}
